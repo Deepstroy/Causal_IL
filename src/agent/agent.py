@@ -1,9 +1,9 @@
 import networkx as nx
 import itertools
-from utils import pairs_to_dict_bi, pairs_to_dict, union, visited_deque
-from graphs import nx_graph
+from src.utils.utils import pairs_to_dict_bi, pairs_to_dict, union, visited_deque
+from src.utils.graphs import nx_graph
 from typing import AbstractSet as ASet, Tuple, Union, FrozenSet, Collection
-from agnet_utils import StructuralCausalModel as SCM
+from agent_utils import StructuralCausalModel as SCM
 from tqdm import tqdm
 from joblib import Parallel, delayed
 import multiprocessing as mp

@@ -1,9 +1,9 @@
 import networkx as nx
 import itertools
-from utils import pairs_to_dict_bi, pairs_to_dict, union, visited_deque
-from graphs import nx_graph
+from src.utils.utils import pairs_to_dict_bi, pairs_to_dict, union, visited_deque
+from src.utils.graphs import nx_graph
 from typing import AbstractSet as ASet, Tuple, Union, FrozenSet, Collection
-from agnet_utils import StructuralCausalModel as SCM
+from src.agent.agent_utils import StructuralCausalModel as SCM
 from tqdm import tqdm
 from joblib import Parallel, delayed
 import multiprocessing as mp
@@ -388,7 +388,6 @@ def main():
                                             'X2', 'Y1', 'Z2', 'X3', 'X4', 'Y2'))
 
 
-    # 병렬처리
     def compute_naive_proj():
         naive_proj_result = __inner(test_msbd1, Ys={'Y1', 'Y2'})
         return naive_proj_result
@@ -501,7 +500,7 @@ if __name__ == '__main__':
                           ['Z1','X1', 'Y1', 'Z2', 'X2', 'Y2'])
 
 
-    # Fully mSBD-2?
+    # Fully mSBD-2?r
     test_full_imi_mSBD2 = nx_graph({'X1', 'X2', 'X3', 'Z1', 'Z2', 'Z3', 'Y1'},
                           {('X1', 'X2'), ('X2', 'X3'),
                            ('Z1', 'Z2'), ('Z2', 'Z3'),
