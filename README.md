@@ -1,4 +1,4 @@
-# Imitation Learning under mSBD setting
+# Causal Imitation Learning (mSBD)
 
 This repository contains the implementation of a sequential imitation learning model under multi-outcome SBD conditions.
 
