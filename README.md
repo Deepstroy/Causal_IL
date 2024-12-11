@@ -5,8 +5,6 @@ This repository contains the implementation of a sequential imitation learning m
 ---
 
 ## Experiments
-Here are the experimental results for the professor regarding self-supervised imitation learning.  
-
 The experiment compares the imitation accuracy in the mSBD environment between:  
 1. Applying Kumor's sequential pi-BD policy separately at each time step (baseline).  
 2. Deriving the sequential pi-BD policy from a projected graph where the unobserved variable $Y$ has been projected (proposed method).  
